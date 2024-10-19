@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>AMPL - CUSTOMER RELATIONSHIP MANAGERMENT APPLICATION (CRM)</title>
+	<!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 11]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="" />
+	<meta name="keywords"
+		content="">
+
+
+	<!-- Favicon icon -->
+	<!-- <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon"> -->
+	<!-- fontawesome icon -->
+	<link rel="stylesheet" href="../assets/fonts/fontawesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- animation css -->
+	<link rel="stylesheet" href="../assets/plugins/animation/css/animate.min.css">
+
+	<!-- vendor css -->
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+
+	<!-- [ navigation menu ] start -->
+    <nav class="pcoded-navbar menupos-fixed menu-light brand-blue ">
+        <div class="navbar-wrapper ">
+            <div class="navbar-brand header-logo">
+                <a href="employee-dashboard.html" class="b-brand">
+                    <img src="../assets/images/accure-logo.png" width="50%" alt="" class="logo images">
+                    <!-- <img src="../assets/images/logo-icon.svg" alt="" class="logo-thumb images"> -->
+                </a>
+                <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+            </div>
+            <div class="navbar-content scroll-div">
+                <ul class="nav pcoded-inner-navbar">
+                    <!-- <li class="nav-item pcoded-menu-caption">
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="employee-dashboard.html" class="nav-link"><span class="pcoded-micon"><i
+                                    class="fa fa-home"></i></span><span class="pcoded-mtext">Employee
+                                Dashboard</span></a>
+                    </li>
+
+                    <li class="nav-item pcoded-hasmenu">
+                        <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="fa fa-plus-square" aria-hidden="true"></i>
+                        </span><span class="pcoded-mtext">Add Order</span></a>
+                        <ul class="pcoded-submenu">
+                            <li class=""><a href="place-order.html" class="">Place Order</a></li>
+                            <li class=""><a href="trace-order.html" class="">Trace Order</a></li>
+                            <li class=""><a href="order-details.html" class="">Order Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="inventory.html" class="nav-link"><span class="pcoded-micon"><i class="fa fa-bandcamp" aria-hidden="true"></i>
+                    </span><span
+                    class="pcoded-mtext">Inventory</span></a></li>
+
+                    <!-- <li class="nav-item"><a href="help.html" class="nav-link"><span class="pcoded-micon"><i
+                                    class="fa fa-users" aria-hidden="true"></i></span><span
+                                class="pcoded-mtext">Help</span></a></li> -->
+
+            </div>
+        </div>
+    </nav>
+	<!-- [ navigation menu ] end -->
+     <!-- [ Header ] start -->
+     <header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed">
+        <div class="m-header">
+            <a class="mobile-menu" id="mobile-collapse1" href="#!"><span></span></a>
+            <a href="employee-dashboard.html" class="b-brand">
+                <img src="../assets/images/accure-logo.png" alt="" class="logo images">
+                <!-- <img src="../assets/images/logo-icon.svg" alt="" class="logo-thumb images"> -->
+            </a>
+        </div>
+        <a class="mobile-menu" id="mobile-header" href="#!">
+            <i class="feather icon-more-horizontal"></i>
+        </a>
+        <div class="collapse navbar-collapse">
+            <a href="#!" class="mob-toggler"></a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <div class="main-search open">
+                        <div class="input-group">
+                            <input type="text" id="m-search" class="form-control" placeholder="Search . . .">
+                            <a href="#!" class="input-group-append search-close">
+                                <i class="feather icon-x input-group-text"></i>
+                            </a>
+                            <span class="input-group-append search-btn btn btn-primary">
+                                <i class="feather icon-search input-group-text"></i>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              
+                <li>
+                    <div class="dropdown drp-user">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon feather icon-settings"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-notification">
+                            <div class="pro-head">
+                                <!-- <img src="../assets/images/user/avatar-1.jpg" class="img-radius"
+                                    alt="User-Profile-Image"> -->
+                                <span>Employee Name</span>
+                                <a href="../LoginDashboard/login-page.html" class="dud-logout" title="Logout">
+                                    <i class="feather icon-log-out"></i>
+                                </a>
+                            </div>
+                            <ul class="pro-body">
+                                <li><a href="#!" class="dropdown-item"><i class="feather icon-user"></i> Profile</a>
+                                </li>
+                                <li><a href="#!" class="dropdown-item"><i class="feather icon-settings"></i>
+                                        Settings</a></li>
+                                <li><a href="../LoginDashboard/login-page.html" class="dropdown-item"><i class="feather icon-lock"></i>
+                                        Lock Screen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+	<!-- [ Header ] end -->
+
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+        <div class="pcoded-wrapper">
+            <div class="pcoded-content">
+                <div class="pcoded-inner-content">
+                    <div class="main-body">
+                        <div class="page-wrapper">
+                            <!-- [ breadcrumb ] start -->
+                            <div class="page-header">
+                                <div class="page-block">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-12">
+                                            <div class="page-header-title">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-6">
+                                                        <h5 class="m-b-10">Place New Order</h5>
+                                                    </div>
+                                                    <div class="col-auto"  id="viewBtn">
+                                                        <a href="order-details.html">   <button type="submit" class="btn btn-primary">View</button></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <ul class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="employee-dashboard.html"><i
+                                                            class="fa fa-home"></i></a></li>
+                                                <li class="breadcrumb-item"><a href="#!">Add Order</a></li>
+                                                <li class="breadcrumb-item"><a href="#!">Trace Order</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ breadcrumb ] end -->
+                            <!-- [ Main Content ] start -->
+                            <div class="row">
+                                <!-- [ form-element ] start -->
+                                <div class="col-sm-12">
+                                    <div class="card">
+                                     
+                                        <div class="card-body">
+                                           
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="productName">Order Id:</label>
+                                                            <input type="text" class="form-control" id="productName"
+                                                                placeholder="">
+
+                                                        </div>
+                                                        
+                                                       
+                                                        <!-- // -->
+                                                        <div class="row">
+                                                            
+                                                            <div class="col-auto" id="tracebtn">
+                                                                <button type="submit"
+                                                                    class="btn btn-success">Submit</button>
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- // -->
+                                                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+
+                                                    </form>
+                                                </div>
+
+                                            </div>
+                                         
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                <!-- [ form-element ] end -->
+                                <!-- [ Main Content ] end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- [ Main Content ] end -->
+    <!-- Required Js -->
+    <script src="../assets/js/vendor-all.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/pcoded.min.js"></script>
+
+</body>
+
+</html>
